@@ -8,11 +8,14 @@
 import UIKit
 
 class ViewController: UITableViewController {
+    static var DATA_SOURCE: String = "FriendData"
     var friends = [Friend]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        loadData()
+        title = "FriendsZone"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: Self, action: #selector(addFriend))
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -26,6 +29,31 @@ class ViewController: UITableViewController {
         cell.detailTextLabel?.text = friend.timeZone.identifier
         
         return cell
+    }
+    
+    func loadData() {
+        let defaults = UserDefaults.standard
+        guard let savedData = defaults.data(forKey: Self.DATA_SOURCE) else { return }
+        if let decodedData = try? JSONDecoder().decode([Friend].self, from: savedData) {
+            friends = decodedData
+        }
+    }
+    
+    func saveData() {
+        let defaults = UserDefaults.standard
+        let encoder = JSONEncoder()
+        
+        guard let savedData = try? encoder.encode(friends) else {
+            fatalError("Unble to encode friends")
+        }
+        defaults.set(savedData, forKey: Self.DATA_SOURCE)
+    }
+    
+    @objc func addFriend() {
+        let friend = Friend()
+        friends.append(friend)
+        tableView.insertRows(at: [IndexPath(row: friends.count - 1, section: 0)], with: .automatic)
+        saveData()
     }
 }
 
