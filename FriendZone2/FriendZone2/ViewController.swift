@@ -15,7 +15,7 @@ class ViewController: UITableViewController {
         super.viewDidLoad()
         loadData()
         title = "FriendsZone"
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: Self, action: #selector(addFriend))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addFriend))
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -29,6 +29,10 @@ class ViewController: UITableViewController {
         cell.detailTextLabel?.text = friend.timeZone.identifier
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        configure(friend: friends[indexPath.row], position: indexPath.row)
     }
     
     func loadData() {
@@ -54,6 +58,18 @@ class ViewController: UITableViewController {
         friends.append(friend)
         tableView.insertRows(at: [IndexPath(row: friends.count - 1, section: 0)], with: .automatic)
         saveData()
+        
+        configure(friend: friend, position: friends.count - 1)
+    }
+    
+    func configure(friend: Friend, position: Int) {
+        guard let vc = storyboard?.instantiateViewController(identifier: "FriendViewController") as? FriendViewController else {
+            fatalError("Unable to create FriendViewController")
+        }
+        
+        vc.delegate = self;
+        vc.friend = friend
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 
