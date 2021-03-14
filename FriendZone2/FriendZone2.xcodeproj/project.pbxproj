@@ -16,6 +16,7 @@
 		55536F6825F9A8C900EF257A /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55536F6725F9A8C900EF257A /* Friend.swift */; };
 		55536F6B25FAFC1B00EF257A /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55536F6A25FAFC1B00EF257A /* FriendViewController.swift */; };
 		55536F6E25FAFFCD00EF257A /* TextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55536F6D25FAFFCD00EF257A /* TextTableViewCell.swift */; };
+		55536F7125FD9D4A00EF257A /* Int-TimeFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55536F7025FD9D4A00EF257A /* Int-TimeFormatting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		55536F6725F9A8C900EF257A /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		55536F6A25FAFC1B00EF257A /* FriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
 		55536F6D25FAFFCD00EF257A /* TextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTableViewCell.swift; sourceTree = "<group>"; };
+		55536F7025FD9D4A00EF257A /* Int-TimeFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int-TimeFormatting.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				55536F5B25F9A76600EF257A /* Assets.xcassets */,
 				55536F5D25F9A76600EF257A /* LaunchScreen.storyboard */,
 				55536F6025F9A76600EF257A /* Info.plist */,
+				55536F7025FD9D4A00EF257A /* Int-TimeFormatting.swift */,
 			);
 			path = FriendZone2;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 				55536F5525F9A76300EF257A /* SceneDelegate.swift in Sources */,
 				55536F6825F9A8C900EF257A /* Friend.swift in Sources */,
 				55536F6B25FAFC1B00EF257A /* FriendViewController.swift in Sources */,
+				55536F7125FD9D4A00EF257A /* Int-TimeFormatting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -74,20 +74,20 @@
         <scene sceneID="gZQ-HX-o0Y">
             <objects>
                 <tableViewController storyboardIdentifier="FriendViewController" id="Vhu-4j-Au0" customClass="FriendViewController" customModule="FriendZone2" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="7Uw-dv-a2X">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="7Uw-dv-a2X">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="Jvp-Rj-bUq" customClass="TextTableViewCell" customModule="FriendZone2" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="55.5" width="414" height="51"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="Name" id="Jvp-Rj-bUq" customClass="TextTableViewCell" customModule="FriendZone2" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55.5" width="414" height="51.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jvp-Rj-bUq" id="jCr-9H-Ybq" customClass="TextTableViewCell" customModule="FriendZone2" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="51"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="51.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Dean Anips" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Pnz-AX-6ST">
-                                            <rect key="frame" x="16" y="16" width="382" height="19"/>
+                                            <rect key="frame" x="16" y="16" width="382" height="19.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                             <connections>
@@ -107,8 +107,8 @@
                                     <outlet property="textField" destination="Pnz-AX-6ST" id="3gT-D3-gC3"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="MQL-ZZ-VUk" detailTextLabel="ik2-2O-VmD" style="IBUITableViewCellStyleSubtitle" id="44H-dk-oVv">
-                                <rect key="frame" x="0.0" y="106.5" width="414" height="55.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TimeZone" textLabel="MQL-ZZ-VUk" detailTextLabel="ik2-2O-VmD" style="IBUITableViewCellStyleSubtitle" id="44H-dk-oVv">
+                                <rect key="frame" x="0.0" y="107" width="414" height="55.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="44H-dk-oVv" id="Jao-c2-Fed">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
