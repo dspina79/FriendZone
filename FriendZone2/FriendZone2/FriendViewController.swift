@@ -69,7 +69,7 @@ class FriendViewController: UITableViewController {
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "TimeZone", for: indexPath)
             let timeZone = timeZones[indexPath.row]
-            cell.textLabel?.text = timeZone.identifier
+            cell.textLabel?.text = timeZone.identifier.replacingOccurrences(of: "_", with: " ")
             let timeDifference = timeZone.secondsFromGMT(for: Date())
             cell.detailTextLabel?.text = timeDifference.timeString()
             if indexPath.row == selectedTimeZone {
@@ -107,7 +107,14 @@ class FriendViewController: UITableViewController {
         
         tableView.deselectRow(at: indexPath, animated: true)
     }
+    
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        delegate?.updateFriend(friend)
+    }
 
     @IBAction func nameChanged(_ sender: UITextField) {
+        friend.name = sender.text ?? ""
     }
 }
