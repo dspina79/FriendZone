@@ -28,7 +28,13 @@ class ViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         let friend = friends[indexPath.row]
         cell.textLabel?.text = friend.name
-        cell.detailTextLabel?.text = friend.timeZone.identifier
+        
+        let formatter = DateFormatter()
+        formatter.timeZone = friend.timeZone
+        formatter.timeStyle = .short
+        
+        
+        cell.detailTextLabel?.text = formatter.string(from: Date())
         
         return cell
     }
