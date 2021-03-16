@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UITableViewController {
+class ViewController: UITableViewController, Storyboarded{
     static var DATA_SOURCE: String = "FriendData"
     var friends = [Friend]()
     

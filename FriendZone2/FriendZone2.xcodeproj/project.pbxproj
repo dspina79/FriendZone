@@ -17,6 +17,9 @@
 		55536F6B25FAFC1B00EF257A /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55536F6A25FAFC1B00EF257A /* FriendViewController.swift */; };
 		55536F6E25FAFFCD00EF257A /* TextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55536F6D25FAFFCD00EF257A /* TextTableViewCell.swift */; };
 		55536F7125FD9D4A00EF257A /* Int-TimeFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55536F7025FD9D4A00EF257A /* Int-TimeFormatting.swift */; };
+		55536F7425FEE47700EF257A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55536F7325FEE47700EF257A /* Coordinator.swift */; };
+		55536F7725FEE52800EF257A /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55536F7625FEE52800EF257A /* MainCoordinator.swift */; };
+		55536F7A25FEE61700EF257A /* StoryBoarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55536F7925FEE61700EF257A /* StoryBoarded.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		55536F6A25FAFC1B00EF257A /* FriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
 		55536F6D25FAFFCD00EF257A /* TextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTableViewCell.swift; sourceTree = "<group>"; };
 		55536F7025FD9D4A00EF257A /* Int-TimeFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int-TimeFormatting.swift"; sourceTree = "<group>"; };
+		55536F7325FEE47700EF257A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		55536F7625FEE52800EF257A /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		55536F7925FEE61700EF257A /* StoryBoarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoarded.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,9 @@
 				55536F5225F9A76300EF257A /* AppDelegate.swift */,
 				55536F5425F9A76300EF257A /* SceneDelegate.swift */,
 				55536F5625F9A76300EF257A /* ViewController.swift */,
+				55536F7325FEE47700EF257A /* Coordinator.swift */,
+				55536F7625FEE52800EF257A /* MainCoordinator.swift */,
+				55536F7925FEE61700EF257A /* StoryBoarded.swift */,
 				55536F6A25FAFC1B00EF257A /* FriendViewController.swift */,
 				55536F5825F9A76300EF257A /* Main.storyboard */,
 				55536F6D25FAFFCD00EF257A /* TextTableViewCell.swift */,
@@ -149,12 +158,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55536F7425FEE47700EF257A /* Coordinator.swift in Sources */,
 				55536F6E25FAFFCD00EF257A /* TextTableViewCell.swift in Sources */,
 				55536F5725F9A76300EF257A /* ViewController.swift in Sources */,
 				55536F5325F9A76300EF257A /* AppDelegate.swift in Sources */,
 				55536F5525F9A76300EF257A /* SceneDelegate.swift in Sources */,
+				55536F7A25FEE61700EF257A /* StoryBoarded.swift in Sources */,
 				55536F6825F9A8C900EF257A /* Friend.swift in Sources */,
 				55536F6B25FAFC1B00EF257A /* FriendViewController.swift in Sources */,
+				55536F7725FEE52800EF257A /* MainCoordinator.swift in Sources */,
 				55536F7125FD9D4A00EF257A /* Int-TimeFormatting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
